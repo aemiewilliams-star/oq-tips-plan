@@ -1,0 +1,927 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>팁스(TIPS) 해외마케팅 사업계획서 — 주식회사 제너디어스 (OQ)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap');
+
+  :root {
+    --primary: #1a3a5c;
+    --accent: #0066ff;
+    --accent-light: #e8f0fe;
+    --success: #0d9488;
+    --warning: #f59e0b;
+    --danger: #ef4444;
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-900: #111827;
+    --square-black: #1a1a2e;
+    --square-blue: #006aff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--gray-900);
+    background: #fff;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--square-black) 0%, #16213e 50%, var(--primary) 100%);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    color: #fff; text-align: center; padding: 60px 40px;
+    position: relative; overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 70%, rgba(0,106,255,.15) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(13,148,136,.12) 0%, transparent 50%);
+  }
+  .cover * { position: relative; z-index: 1; }
+  .cover .badge {
+    display: inline-block; padding: 6px 20px;
+    border: 1px solid rgba(255,255,255,.3); border-radius: 40px;
+    font-size: 13px; letter-spacing: 1px; margin-bottom: 28px;
+    backdrop-filter: blur(4px); background: rgba(255,255,255,.06);
+  }
+  .cover h1 { font-size: 36px; font-weight: 900; margin-bottom: 16px; line-height: 1.3; }
+  .cover h1 em { font-style: normal; color: #60a5fa; }
+  .cover .subtitle { font-size: 17px; font-weight: 300; opacity: .85; max-width: 700px; margin: 0 auto 40px; }
+  .cover .meta-row { display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; font-size: 14px; opacity: .7; }
+
+  /* ── LAYOUT ── */
+  .container { max-width: 920px; margin: 0 auto; padding: 0 32px; }
+  section { padding: 56px 0; border-bottom: 1px solid var(--gray-200); }
+  section:last-of-type { border-bottom: none; }
+
+  /* ── SECTION HEADER (원본 스타일) ── */
+  .section-header {
+    display: inline-block; padding: 6px 18px;
+    background: var(--gray-900); color: #fff;
+    font-size: 18px; font-weight: 700;
+    border-radius: 4px; margin-bottom: 28px;
+  }
+
+  h2 {
+    font-size: 24px; font-weight: 800; color: var(--primary); margin-bottom: 8px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  h2 .num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 34px; height: 34px; border-radius: 10px;
+    background: var(--accent); color: #fff; font-size: 15px; font-weight: 700;
+  }
+  h2 + .section-desc { color: var(--gray-500); font-size: 14px; margin-bottom: 28px; }
+
+  h3 { font-size: 18px; font-weight: 700; color: var(--gray-900); margin: 32px 0 14px; }
+  h4 { font-size: 15px; font-weight: 600; margin: 22px 0 10px; color: var(--primary); }
+
+  p { margin-bottom: 14px; }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--gray-50); border: 1px solid var(--gray-200);
+    border-radius: 14px; padding: 24px 26px; margin-bottom: 18px;
+  }
+  .card.accent { background: var(--accent-light); border-color: #bfdbfe; }
+  .card.dark { background: var(--square-black); color: #e0e0e0; border-color: #333; }
+  .card.dark strong { color: #60a5fa; }
+  .card.success { background: #ecfdf5; border-color: #a7f3d0; }
+
+  .card-title { font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+  .card.accent .card-title { color: var(--accent); }
+
+  /* ── TABLE ── */
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 22px; font-size: 14px; }
+  th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--gray-200); }
+  th { background: var(--gray-100); font-weight: 600; font-size: 13px; color: var(--gray-700); white-space: nowrap; }
+  td { color: var(--gray-700); }
+  tr:last-child td { border-bottom: none; }
+
+  /* ── LISTS ── */
+  ul, ol { margin: 10px 0 16px 24px; }
+  li { margin-bottom: 5px; }
+
+  /* ── HIGHLIGHTS ── */
+  .highlight {
+    background: linear-gradient(135deg, var(--accent) 0%, var(--success) 100%);
+    color: #fff; border-radius: 14px; padding: 28px 32px; margin: 24px 0;
+  }
+  .highlight h3 { color: #fff; margin-top: 0; }
+
+  .quote {
+    border-left: 4px solid var(--accent);
+    padding: 14px 22px; margin: 18px 0;
+    background: var(--accent-light); border-radius: 0 10px 10px 0;
+    font-size: 15px; font-weight: 500;
+  }
+
+  /* ── GRID ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  @media(max-width:700px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+  /* ── TIMELINE ── */
+  .timeline { position: relative; padding-left: 32px; margin: 22px 0; }
+  .timeline::before { content: ''; position: absolute; left: 11px; top: 8px; bottom: 8px; width: 2px; background: var(--gray-300); }
+  .tl-item { position: relative; margin-bottom: 22px; }
+  .tl-item::before {
+    content: ''; position: absolute; left: -26px; top: 6px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--accent); border: 3px solid #fff; box-shadow: 0 0 0 2px var(--accent);
+  }
+  .tl-item .tl-date { font-size: 12px; font-weight: 700; color: var(--accent); margin-bottom: 4px; }
+  .tl-item .tl-title { font-weight: 600; font-size: 15px; }
+  .tl-item .tl-desc { font-size: 13px; color: var(--gray-500); }
+
+  /* ── METRIC ── */
+  .metric-row { display: flex; gap: 12px; flex-wrap: wrap; margin: 18px 0; }
+  .metric {
+    flex: 1; min-width: 130px; text-align: center;
+    padding: 18px 10px; border-radius: 12px;
+    background: var(--gray-50); border: 1px solid var(--gray-200);
+  }
+  .metric .value { font-size: 26px; font-weight: 800; color: var(--accent); }
+  .metric .label { font-size: 12px; color: var(--gray-500); margin-top: 4px; }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    background: var(--gray-100); padding: 40px 0; text-align: center;
+    font-size: 13px; color: var(--gray-500);
+  }
+
+  /* ── TOC ── */
+  .toc { background: var(--gray-50); border-radius: 14px; padding: 24px 28px; margin: 28px 0; }
+  .toc h3 { margin-top: 0; font-size: 16px; }
+  .toc ol { counter-reset: toc; list-style: none; margin-left: 0; }
+  .toc ol li { counter-increment: toc; margin-bottom: 6px; }
+  .toc ol li::before {
+    content: counter(toc, decimal-leading-zero); margin-right: 10px;
+    font-weight: 700; color: var(--accent); font-size: 13px;
+  }
+  .toc a { text-decoration: none; color: var(--gray-700); font-weight: 500; }
+  .toc a:hover { color: var(--accent); }
+
+  .tag {
+    display: inline-block; padding: 3px 10px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; margin-right: 6px;
+  }
+  .tag.blue { background: #dbeafe; color: #1e40af; }
+  .tag.green { background: #d1fae5; color: #065f46; }
+  .tag.orange { background: #ffedd5; color: #9a3412; }
+  .tag.purple { background: #ede9fe; color: #5b21b6; }
+  .tag.red { background: #fee2e2; color: #991b1b; }
+
+  @media print {
+    .cover { min-height: auto; padding: 60px 40px; }
+    section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================== COVER ============================== -->
+<div class="cover">
+  <div class="badge">TIPS 해외마케팅 사업계획서</div>
+  <h1>
+    글로벌 POS 생태계의 마지막 수작업 구간을<br>
+    자동화하는 <em>AI 인프라</em>
+  </h1>
+  <p class="subtitle">
+    OQ — 국내 POS 채널에서 검증된 메뉴 디지털 전환 기술을 Square 생태계에 이식하여<br>
+    레스토랑의 메뉴 온보딩과 운영 마케팅을 자동화하는 Restaurant Onboarding &amp; Merchandising SaaS
+  </p>
+  <div class="meta-row">
+    <span>주식회사 제너디어스 (Genideas Inc.)</span>
+    <span>서비스 브랜드 : OQ (오큐)</span>
+    <span>기술 분야 : 정보·통신(SW)</span>
+  </div>
+</div>
+
+<!-- ============================== BODY ============================== -->
+<div class="container">
+
+<!-- ═══ 신청현황 요약 ═══ -->
+<section>
+  <div class="section-header">신청현황</div>
+
+  <table>
+    <tr><th>기술 분야</th><td colspan="3">정보·통신(SW)</td></tr>
+    <tr><th>창업아이템명</th><td>AI Agents, OQ</td><th>범주</th><td>POS연동 인공지능프로그램</td></tr>
+    <tr><th>기업명</th><td>주식회사 제너디어스</td><th>개업연월일</th><td>2024년 7월 24일</td></tr>
+    <tr><th>사업자 구분</th><td>법인사업자</td><th>사업장 소재지</th><td>경기도 여주시</td></tr>
+  </table>
+
+  <h4>'24년 주요성과 및 투자 현황</h4>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">주요 성과 (2024년)</div>
+      <table style="font-size:13px; margin:0;">
+        <tr><th>고용</th><td>8명 (대표자 제외)</td></tr>
+        <tr><th>매출</th><td>60백만원 (5개월 만에 달성)</td></tr>
+        <tr><th>수출</th><td>0원 → <strong>해외마케팅 사업으로 전환</strong></td></tr>
+        <tr><th>투자</th><td>600백만원 ('24년 총 투자유치)</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">투자 현황</div>
+      <table style="font-size:13px; margin:0;">
+        <tr><th>더벤처스</th><td>100,050,000원</td><td>2024.10</td></tr>
+        <tr><th>베이스디스트림</th><td>145,500,000원</td><td>2024.10</td></tr>
+        <tr><th>베이스메트로놈</th><td>154,500,000원</td><td>2024.10</td></tr>
+        <tr><th>퀀텀딥테크엔젤1호</th><td>200,100,000원</td><td>2024.10</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="quote">
+    <strong>산출물(협약기간 내 목표)</strong> — Square API 연동 AI 자동 메뉴판 Add-on 모듈, 북미 파일럿 셀러 확보(5개 이상 Active Seller), 에이전시 파트너 라이선스 출시(1식)
+  </div>
+</section>
+
+
+<!-- ═══ 창업아이템 개요 ═══ -->
+<section>
+  <div class="section-header">창업아이템 개요(요약)</div>
+
+  <table>
+    <tr><th style="width:80px;">명 칭</th><td>AI Agents, OQ</td><th style="width:80px;">범 주</th><td>POS연동 인공지능프로그램</td></tr>
+  </table>
+
+  <h4>소 개</h4>
+  <p>
+    AI Agents, OQ는 외식업 자영업자의 운영 부담을 줄이고 매출 향상을 지원하기 위해 개발된 POS 연동 지능형 AI 솔루션임. 종이·이미지 형태의 메뉴판을 촬영하면 AI가 인식하여 웹·모바일에 최적화된 온라인 메뉴판을 자동 생성. 기존 3시간 이상 소요되던 메뉴판 제작 과정을 <strong>3분 이내로 단축</strong>, 실시간 메뉴 변경과 이벤트 반영이 가능.
+  </p>
+  <p>
+    POS 연동 : 메뉴판 촬영만으로 AI 자동 메뉴판 생성과 POS 자동 등록이 가능 원격 수정·자동 반영이 가능하며, 대리점 및 프랜차이즈 본사의 관리 효율성을 높일 수 있음.
+  </p>
+  <p>
+    <strong>해외마케팅 확장 전략:</strong> 국내 POS 채널에서 검증된 이 기술을 <strong>Square 생태계</strong>에 이식하여, 북미 레스토랑의 종이 메뉴를 AI로 구조화하고 음식 이미지·프로모션 소재를 자동 생성/관리하는 <em>'Restaurant Onboarding &amp; Merchandising SaaS'</em>로 확장한다.
+  </p>
+
+  <div class="card accent">
+    <div class="card-title">핵심 톤 — 이것은 "메뉴판 툴 수출"이 아니다</div>
+    <p style="font-size:14px; margin:0;">
+      OQ는 <strong>글로벌 POS 생태계에서 여전히 수작업으로 남아 있는 '메뉴 입력 → 이미지 제작 → 프로모션 생성 → 다점포 반영'이라는 마지막 구간을 AI로 자동화하는 인프라</strong>이다. Square를 1차 채널로 선정한 이유는, 개발자 문서·OAuth·App Marketplace·다점포 레스토랑 활용성까지 갖춘 구조라서 OQ가 빠르게 진입·검증하기에 최적인 첫 글로벌 채널이기 때문이다.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 1. 문제인식 (Problem) — 원본 섹션 1 대응                          -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="s1">
+  <div class="section-header">1. 문제인식 (Problem)</div>
+
+  <h3>1-1. 해외마케팅 사업의 고도화 동기</h3>
+
+  <h4>글로벌 외식산업의 디지털 전환 어려움과 기회</h4>
+  <p>
+    글로벌 푸드테크 시장은 연평균 성장률 38%(2017~2020년)를 기록, 2032년 약 600조 원 규모에 도달할 전망이다. 이는 푸드테크가 미래 산업의 핵심 동력임을 보여준다. 미국 내에만 약 100만 개 이상의 레스토랑이 존재하며, 이 중 상당수가 <strong>메뉴 등록·수정·이미지 제작을 수작업으로 처리</strong>하고 있다.
+  </p>
+  <p>
+    Square 생태계에만 <strong>350만 이상의 활성 셀러</strong>가 존재하며, 이 중 레스토랑 셀러의 메뉴 온보딩·운영 자동화 수요는 아직 POS 앱마켓에서 충분히 해소되지 않고 있다. 기존 키오스크나 테이블 오더와 달리, OQ는 설치비와 유지비 부담 없이 사용할 수 있는 POS 연동형 AI 솔루션이다.
+  </p>
+
+  <div class="metric-row">
+    <div class="metric">
+      <div class="value">600조</div>
+      <div class="label">글로벌 푸드테크 시장 (2032년)</div>
+    </div>
+    <div class="metric">
+      <div class="value">100만+</div>
+      <div class="label">미국 내 레스토랑 수</div>
+    </div>
+    <div class="metric">
+      <div class="value">350만+</div>
+      <div class="label">Square 활성 셀러 (글로벌)</div>
+    </div>
+    <div class="metric">
+      <div class="value">2조</div>
+      <div class="label">국내 POS 시장 (2028년)</div>
+    </div>
+  </div>
+
+  <h4>국내 검증 → 해외 리스크 최소화의 논리</h4>
+  <p>
+    국내에서 OKPOS·유니온포스·아임유포스 등 상위 POS사와의 연동을 완료하고, 우아한형제들(배달의민족) AI 이미지 솔루션 납품, 130개 가맹점·30개 시범매장 운영 등을 통해 기술과 사업 모델이 모두 검증되었다. <strong>"한국에서 잘된다"가 아니라 "해외 실행 리스크가 낮다"</strong>는 근거로서 국내 실적을 활용한다.
+  </p>
+
+  <h3>1-2. 해외마케팅 사업의 목적</h3>
+  <h4>Square 생태계를 1차 글로벌 진입 채널로 설정</h4>
+  <p>
+    국내 사업화안에 이미 북미 파트너 <strong>브링코</strong>가 포함되어 있으므로, 해외 1차 시장을 <strong>북미 Square sellers</strong>로 좁히는 서사가 자연스럽다. "광범위한 동남아 진출"보다 <strong>미국·캐나다 등 Square 지원 시장에 대한 집중 진입</strong>이 훨씬 설득력 있다.
+  </p>
+  <div class="card dark">
+    <p style="margin:0;">
+      <strong>1차 : 미국·캐나다 Square 시장 → 2차 : 비-Square 동남아 확장</strong><br>
+      동남아 확장은 Square 시장 검증 이후 2차 단계로 설정. Square가 다점포 운영과 로케이션 관리를 지원하므로, 단순 개별 점포보다 멀티로케이션 고객을 핵심 타깃에 포함.
+    </p>
+  </div>
+
+  <h3>1-3. 목표시장 분석 — Square 생태계 내 타깃 세분화</h3>
+  <p>"첫 고객을 더 좁게 정의"하여 집중한다.</p>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">단일/다점포 QSR·캐주얼 다이닝</div>
+      <p style="font-size:13px;">Square를 쓰는 레스토랑 중 메뉴 등록·수정이 잦은 Quick-Service Restaurant 및 캐주얼 다이닝. 메뉴 회전이 빠르고 이미지 교체 빈도가 높아 OQ 자동화 가치 극대화.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">이민자 상권 레스토랑</div>
+      <p style="font-size:13px;">영문 외 다국어 메뉴가 필요한 한식·중식·일식·베트남식·타이 레스토랑. OQ의 11개 언어 자동번역이 즉시 가치를 제공. 미국 내 약 100만개 이상 아시안 레스토랑 시장.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">메뉴 제작 대행사 (에이전시)</div>
+      <p style="font-size:13px;">현지 레스토랑 마케팅 에이전시. 다수 클라이언트의 메뉴를 관리하므로 OQ 에이전시 라이선스의 핵심 채널 파트너.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">5~50 로케이션 레스토랑 체인</div>
+      <p style="font-size:13px;">Square for Restaurants를 쓰는 다점포 체인 본사. 메뉴 일괄 관리, 지역별 메뉴 차등 운영 등 OQ 멀티로케이션 대시보드의 핵심 고객.</p>
+    </div>
+  </div>
+
+  <h3>1-4. 경쟁 환경 분석 — Square App Marketplace</h3>
+  <p>글로벌 경쟁사를 POS 본체가 아니라 <strong>세 부류</strong>로 나눈다. OQ는 이 세 영역을 관통하는 유일한 통합 워크플로우로 차별화.</p>
+
+  <table>
+    <tr><th>카테고리</th><th>대표 경쟁사</th><th>주요 기능</th><th>OQ 대비 한계</th></tr>
+    <tr>
+      <td><span class="tag blue">인터랙티브 메뉴·직접주문</span></td>
+      <td>Popmenu, MenuDrive</td>
+      <td>디지털 메뉴 + 온라인 주문</td>
+      <td>메뉴 입력 수작업, AI 이미지 생성 없음</td>
+    </tr>
+    <tr>
+      <td><span class="tag green">메뉴 운영·디지털사이니지</span></td>
+      <td>MustHaveMenus, iMenuPro</td>
+      <td>메뉴 디자인 템플릿</td>
+      <td>POS 동기화 부재, 다점포 관리 제한</td>
+    </tr>
+    <tr>
+      <td><span class="tag orange">마케팅 크리에이티브 제작</span></td>
+      <td>PosterMyWall, Canva</td>
+      <td>포스터·배너·소셜미디어</td>
+      <td>음식 특화 아님, POS 연동 없음</td>
+    </tr>
+    <tr style="background:#f0fdf4;">
+      <td><span class="tag purple">OQ 통합 레이어</span></td>
+      <td><strong>OQ (Genideas)</strong></td>
+      <td>메뉴 입력 자동화 + 이미지 보정/생성 + 포스터 + POS 동기화</td>
+      <td><strong>차별적 통합 워크플로우</strong></td>
+    </tr>
+  </table>
+
+  <h4>기능 비교 매트릭스</h4>
+  <table>
+    <tr><th>기능</th><th>OQ</th><th>Popmenu</th><th>MustHaveMenus</th><th>PosterMyWall</th></tr>
+    <tr><td>종이 메뉴 → 디지털 자동 변환</td><td>✅ AI</td><td>❌</td><td>❌</td><td>❌</td></tr>
+    <tr><td>AI 음식 이미지 생성/보정</td><td>✅</td><td>❌</td><td>❌</td><td>⚠️ 범용</td></tr>
+    <tr><td>다국어 자동번역 (11개국어)</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+    <tr><td>POS 카탈로그 동기화</td><td>✅</td><td>⚠️ 일부</td><td>❌</td><td>❌</td></tr>
+    <tr><td>다점포 중앙 관리</td><td>✅</td><td>⚠️</td><td>❌</td><td>❌</td></tr>
+    <tr><td>프로모션 포스터 자동 생성</td><td>✅</td><td>❌</td><td>⚠️ 템플릿</td><td>✅ 범용</td></tr>
+    <tr><td>에이전시 멀티테넌트</td><td>✅</td><td>❌</td><td>❌</td><td>❌</td></tr>
+  </table>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 2. 실현가능성 (Solution) — 원본 섹션 2 대응                       -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="s2">
+  <div class="section-header">2. 실현가능성 (Solution)</div>
+
+  <h3>2-1. Square 연동 기술 고도화 방안</h3>
+
+  <h4>최종 산출물 및 고도화 범위</h4>
+  <p>
+    최종 산출물은 Square API와 연동 가능한 <strong>AI 자동 메뉴판 Add-on 모듈</strong>, <strong>멀티로케이션 대시보드(1식)</strong>, <strong>에이전시 파트너 라이선스(1식)</strong>로 총 3가지임. 국내에서 상위 5개 POS사 연동 모듈을 표준화한 경험을 기반으로, Square API 연동으로 확장한다.
+  </p>
+
+  <h4>Square API 연동 아키텍처</h4>
+  <div class="card" style="text-align:center; padding:28px;">
+    <pre style="font-size:12px; line-height:1.9; text-align:left; display:inline-block; font-family:monospace;">
+┌──────────────────────────────────────────────────────┐
+│                  OQ Cloud Platform                    │
+│                                                       │
+│  ┌──────────┐  ┌────────────┐  ┌────────────────┐    │
+│  │ AI Menu  │  │ AI Image   │  │ Promotion      │    │
+│  │ Parser   │→ │ Generator  │→ │ Auto-Creator   │    │
+│  │ (OCR+NLP)│  │ (Food AI)  │  │ (Poster/Banner)│    │
+│  └────┬─────┘  └─────┬──────┘  └───────┬────────┘    │
+│       └──────────────┼─────────────────┘              │
+│                      │                                │
+│            ┌─────────▼──────────┐                     │
+│            │  OQ Sync Engine    │                     │
+│            │  (Multi-location   │                     │
+│            │   Dashboard)       │                     │
+│            └─────────┬──────────┘                     │
+└──────────────────────┼────────────────────────────────┘
+                       │
+             ┌─────────▼─────────┐
+             │   Square APIs     │
+             │  ▸ OAuth 2.0      │
+             │  ▸ Catalog API    │
+             │  ▸ Orders API     │
+             │  ▸ Locations API  │
+             │  ▸ Webhooks       │
+             └─────────┬─────────┘
+                       │
+        ┌──────────────┼──────────────┐
+        │              │              │
+   ┌────▼───┐    ┌────▼───┐    ┌────▼───┐
+   │ Store  │    │ Store  │    │ Store  │
+   │  A     │    │  B     │    │  C     │
+   │ (LA)   │    │ (NY)   │    │ (CHI)  │
+   └────────┘    └────────┘    └────────┘
+    </pre>
+  </div>
+
+  <h4>Square API 활용 상세</h4>
+  <table>
+    <tr><th>Square API</th><th>OQ 활용 목적</th><th>구현 범위</th></tr>
+    <tr><td>Catalog API</td><td>메뉴 아이템·옵션·카테고리 CRUD, 이미지 연결</td><td>MVP 핵심</td></tr>
+    <tr><td>OAuth 2.0</td><td>셀러 계정 연동, 토큰 관리</td><td>MVP 핵심</td></tr>
+    <tr><td>Locations API</td><td>다점포 매장별 메뉴 차등 관리</td><td>MVP 핵심</td></tr>
+    <tr><td>Orders API</td><td>주문 데이터 기반 인기 메뉴 분석, 추천 프로모션</td><td>Phase 2</td></tr>
+    <tr><td>Webhooks</td><td>메뉴 변경·주문 이벤트 실시간 수신</td><td>Phase 2</td></tr>
+    <tr><td>Team API</td><td>직원별 권한 관리 (멀티로케이션)</td><td>Phase 3</td></tr>
+  </table>
+
+  <h3>2-2. 국내 검증 역량 — 해외 실행 리스크 저감 근거</h3>
+
+  <h4>핵심 기술 스택 (국내 검증 완료)</h4>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">AI 메뉴 디지털 전환 엔진</div>
+      <p style="font-size:13px;">종이 메뉴판 1장 촬영 → <strong>3분 이내</strong> 구조화된 디지털 메뉴 완성. OCR + NLP + 카테고리 분류 + 가격 추출을 하나의 파이프라인으로 처리. 기존 3시간 이상 소요 과정을 혁신적으로 단축.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">AI 비주얼 최적화 엔진</div>
+      <p style="font-size:13px;">음식 이미지 자동 보정·생성, 로고 제작, 메뉴 커버/포스터 자동 생성. 우아한형제들(배민) 납품으로 <strong>대형 플랫폼 수준에서 검증</strong>된 프로덕션 레벨 엔진.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">11개 언어 자동번역</div>
+      <p style="font-size:13px;">한국어·영어·중국어(간체/번체)·일본어·베트남어·태국어 등 11개 언어 지원. 음식 특화 번역 모델로 맛·재료·조리법 뉘앙스 반영.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">프랜차이즈 중앙 관리</div>
+      <p style="font-size:13px;">100개 이상 매장 메뉴 일괄 업데이트. 본사 → 지점 실시간 동기화. 가맹점별 메뉴·프로모션 일괄 등록/수정, 매출·주문 패턴 분석.</p>
+    </div>
+  </div>
+
+  <h4>대규모 AI 데이터셋 및 학습 인프라</h4>
+  <div class="metric-row">
+    <div class="metric">
+      <div class="value">137만장</div>
+      <div class="label">음식 이미지 데이터 (1.37TB)</div>
+    </div>
+    <div class="metric">
+      <div class="value">72만장</div>
+      <div class="label">실제 학습 활용 데이터</div>
+    </div>
+    <div class="metric">
+      <div class="value">H100×4</div>
+      <div class="label">GPU 학습 인프라 (2025.09~)</div>
+    </div>
+  </div>
+  <p style="font-size:13px; color:var(--gray-500);">
+    WebDataset 기반으로 변환하여 안정적인 학습 환경 구축. GCP크레딧과 네이버 클라우드 크레딧을 확보하여 확장 가능한 클라우드 인프라 운영 중.
+  </p>
+
+  <h4>국내 POS 연동 실적 → Square 연동 기반</h4>
+  <table>
+    <tr><th>파트너</th><th>연동 내용</th><th>글로벌 번역</th></tr>
+    <tr><td>OKPOS (오케이포스)</td><td>POS 연동 (NDA 체결)</td><td>Multi-POS Integration 역량 증명</td></tr>
+    <tr><td>유니온포스</td><td>기능 연동 협력 계약 (2025.07)</td><td>채널 파트너 모델 검증</td></tr>
+    <tr><td>아임유포스</td><td>AI 메뉴판 기술 연동</td><td>POS-agnostic 아키텍처 증명</td></tr>
+    <tr><td>포스트포스</td><td>POS프로그램 연동 지원</td><td>다양한 POS 환경 호환</td></tr>
+    <tr><td>KT하이오더</td><td>테이블 오더 프로그램 연동</td><td>주문 시스템 통합 경험</td></tr>
+    <tr><td>모니모</td><td>포괄제휴약정 (2026.02)</td><td>결제 인프라 연동 확장</td></tr>
+    <tr><td>브링코</td><td>결제모듈·언어팩 개발 용역</td><td><strong>북미 파트너 — Square 시장 교두보</strong></td></tr>
+  </table>
+
+  <div class="card accent">
+    <div class="card-title">대형 플랫폼 납품 — 음식 비주얼 최적화 엔진 검증</div>
+    <p style="font-size:13px; margin:0;">
+      우아한형제들(배달의민족) AI 이미지 솔루션 계약(2025.12), 땡겨요 AI 서비스 견적 진행 등은 단순 디자인 외주가 아닌, <strong>대형 플랫폼 수준에서 검증된 음식 비주얼 최적화 엔진</strong>임을 증명. 글로벌 시장에서 AI 이미지 품질에 대한 신뢰도를 직접적으로 뒷받침하는 레퍼런스.
+    </p>
+  </div>
+
+  <h3>2-3. 차별화 강화 방안</h3>
+  <h4>Square App Marketplace 내 유일한 통합 워크플로우</h4>
+  <div class="highlight">
+    <h3>OQ의 경쟁 차별점</h3>
+    <p>
+      OQ는 "또 하나의 메뉴 제작 툴"이 아니라, <strong>종이 메뉴의 구조화 자동화(AI OCR+NLP)</strong>와 <strong>상품 이미지·포스터를 동시에 생성하는 상점 운영형 워크플로우</strong>를 POS와 직접 동기화한다. 이 3-in-1 통합이 Square App Marketplace 내에서 직접적인 경쟁자가 없는 이유이다.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 3. 성장전략 (Scale-up) — 원본 섹션 3 대응                         -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="s3">
+  <div class="section-header">3. 성장전략 (Scale-up)</div>
+
+  <h3>3-1. 글로벌 사업화 방안</h3>
+
+  <h4>3-1-1. 비즈니스 모델 (3-Layer BM)</h4>
+  <p>"단건 제작비가 아닌 반복매출 SaaS 구조"를 해외에서도 동일하게 적용한다.</p>
+
+  <div class="grid-3">
+    <div class="card" style="border-top:4px solid var(--accent);">
+      <div class="card-title" style="color:var(--accent);">Layer 1 — 매장 단위 SaaS 구독</div>
+      <p style="font-size:13px;">개별 레스토랑이 OQ를 월 구독으로 사용.</p>
+      <table style="font-size:12px; margin:0;">
+        <tr><th>플랜</th><th>월(USD)</th><th>기능</th></tr>
+        <tr><td>Starter</td><td>$9.90</td><td>메뉴 1개, 기본 이미지</td></tr>
+        <tr><td>Growth</td><td>$29.90</td><td>메뉴 무제한, AI 이미지 100건</td></tr>
+        <tr><td>Pro</td><td>$49.90</td><td>다국어, 프로모션, 우선 지원</td></tr>
+      </table>
+    </div>
+    <div class="card" style="border-top:4px solid var(--success);">
+      <div class="card-title" style="color:var(--success);">Layer 2 — AI 크레딧 과금</div>
+      <p style="font-size:13px;">구독 포함량 초과 시 크레딧 추가 과금.</p>
+      <table style="font-size:12px; margin:0;">
+        <tr><th>기능</th><th>크레딧</th><th>단가</th></tr>
+        <tr><td>음식 이미지 생성</td><td>10 cr</td><td>$1.00</td></tr>
+        <tr><td>로고 생성</td><td>10 cr</td><td>$1.00</td></tr>
+        <tr><td>포스터/배너</td><td>20 cr</td><td>$2.00</td></tr>
+        <tr><td>메뉴판 스캔+변환</td><td>100 cr</td><td>$9.90</td></tr>
+      </table>
+    </div>
+    <div class="card" style="border-top:4px solid var(--warning);">
+      <div class="card-title" style="color:var(--warning);">Layer 3 — 에이전시·멀티로케이션</div>
+      <p style="font-size:13px;">대행사 및 체인 본사용 대시보드.</p>
+      <table style="font-size:12px; margin:0;">
+        <tr><th>티어</th><th>월(USD)</th><th>관리</th></tr>
+        <tr><td>Agency Starter</td><td>$99</td><td>~10개</td></tr>
+        <tr><td>Agency Pro</td><td>$249</td><td>~30개</td></tr>
+        <tr><td>Enterprise</td><td>협의</td><td>50개+</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card accent">
+    <p style="font-size:13px; margin:0;">
+      <strong>국내 BM과의 연계:</strong> 국내에서는 POS사 Add-on(라이선스 사용료 분배), 대리점 운영Tool(영업 인센티브), 프랜차이즈 중앙 대시보드(구독형 패키지), B2C 직영매장(월 사용료) — 4층 구조를 운영 중이다. 해외 3-Layer BM은 이 검증된 국내 모델을 Square 생태계에 맞게 재구성한 것이다.
+    </p>
+  </div>
+
+  <h4>3-1-2. 국내 시장 진입 현황 (해외 확장의 기반)</h4>
+
+  <p>2025년 4월 정식 런칭 이후 전국 가맹 지점과 일반 매장에 빠르게 도입. <strong>약 5개월 만에 매출 6천만 원을 달성</strong>하여 초기 단계임에도 유료 가맹점 확산과 프랜차이즈 설치를 통해 단기간 내 실질 수익을 창출.</p>
+
+  <table>
+    <tr><th>구분</th><th>목표시장</th><th>제품(서비스)</th><th>진입시기</th><th>판매(이용)량</th><th>가격</th><th>판매 금액</th></tr>
+    <tr><td>1</td><td>프랜차이즈</td><td>AI 메뉴판·QR 오더</td><td>2025년 4월~</td><td>8개 지점</td><td>월 5만원</td><td>2,400만원</td></tr>
+    <tr><td>2</td><td>일반 가맹점</td><td>AI 메뉴판·QR 오더</td><td>2025년 5월~</td><td>130개 매장</td><td>월 5만원</td><td>3,600만원</td></tr>
+    <tr><td>3</td><td>시범 매장</td><td>AI 메뉴판·QR 오더</td><td>2025년 4월~</td><td>30개 매장</td><td>무료/검증용</td><td>-</td></tr>
+  </table>
+
+  <div class="metric-row">
+    <div class="metric">
+      <div class="value">6천만</div>
+      <div class="label">5개월 누적 매출 (원)</div>
+    </div>
+    <div class="metric">
+      <div class="value">130+</div>
+      <div class="label">유료 가맹점 수</div>
+    </div>
+    <div class="metric">
+      <div class="value">3.4배</div>
+      <div class="label">회원가입 증가율</div>
+    </div>
+    <div class="metric">
+      <div class="value">54%</div>
+      <div class="label">로그인 전환율 (23%→54%)</div>
+    </div>
+  </div>
+
+  <h4>3-1-3. Square 시장 진출 추정 매출</h4>
+  <table>
+    <tr><th>순번</th><th>목표고객</th><th>서비스</th><th>진출 시기</th><th>판매(이용)량</th><th>가격</th><th>판매 금액</th></tr>
+    <tr><td>1</td><td>북미 Square 개별 셀러</td><td>AI 메뉴판 SaaS (Growth)</td><td>M3~</td><td>20개 매장</td><td>$29.90/월</td><td>~$7,200/년</td></tr>
+    <tr><td>2</td><td>다점포 체인 (PoC)</td><td>멀티로케이션 대시보드</td><td>M5~</td><td>1~2곳</td><td>$249/월~</td><td>~$6,000/년</td></tr>
+    <tr><td>3</td><td>에이전시 파트너</td><td>Agency 라이선스</td><td>M6~</td><td>2곳</td><td>$99~249/월</td><td>~$4,800/년</td></tr>
+    <tr><td>4</td><td>AI 크레딧 초과 사용</td><td>이미지·포스터 생성</td><td>M4~</td><td>-</td><td>종량제</td><td>부가 수익</td></tr>
+  </table>
+
+  <h3>3-2. 지원사업 추진 일정</h3>
+
+  <h4>3-2-1. 전체 로드맵 (Square 중심)</h4>
+  <table>
+    <tr><th>순번</th><th>추진 내용</th><th>추진 기간</th><th>세부 내용</th></tr>
+    <tr><td>1</td><td>국내 시장 확산</td><td>~2026</td><td>POS사 5곳 제휴 완료, 프랜차이즈 본사 대시보드 보급, Add-on 모듈 확산 5천 매장 도입</td></tr>
+    <tr><td>2</td><td><strong>Square 1차 진출 (북미)</strong></td><td><strong>2026</strong></td><td><strong>Square API 연동, Active Seller 5+ 확보, App Marketplace 등록, 에이전시 파트너 구축</strong></td></tr>
+    <tr><td>3</td><td>운영 OS 서비스</td><td>2027</td><td>Multi Modal Autonomous Agent 기반 운영 OS 출시</td></tr>
+    <tr><td>4</td><td>IPO 추진</td><td>2028</td><td>국내외 매출 성과 기반 기업공개(IPO) 추진</td></tr>
+    <tr><td>5</td><td>글로벌 2차 진출</td><td>2029~</td><td>비-Square POS (Toast, Clover), 동남아 시장 확대</td></tr>
+  </table>
+
+  <h4>3-2-2. 해외마케팅 사업 세부 추진일정</h4>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">M1 ~ M2 (1~2개월차)</div>
+      <div class="tl-title">기반 구축 단계</div>
+      <div class="tl-desc">
+        ▸ Square Developer 계정 등록 및 Sandbox 환경 구축<br>
+        ▸ OAuth 2.0 연동 개발 완료<br>
+        ▸ Catalog API 기반 메뉴 CRUD 구현<br>
+        ▸ AI 메뉴 파서 영문 최적화 (OCR+NLP 영어 튜닝)<br>
+        ▸ 영문 랜딩페이지 구축<br>
+        ▸ 북미 파트너 브링코와 현지 운영 체계 논의
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">M3 ~ M4 (3~4개월차)</div>
+      <div class="tl-title">MVP 검증 및 초기 셀러 확보</div>
+      <div class="tl-desc">
+        ▸ Square Sandbox → Production 전환<br>
+        ▸ AI 이미지 생성/보정 → Catalog 이미지 연결 구현<br>
+        ▸ 초기 파일럿 셀러 5개 이상 확보 (Active Seller 요건)<br>
+        ▸ 이민자 상권 레스토랑 타깃 마케팅 시작<br>
+        ▸ 사용자 피드백 기반 UX/UI 개선
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">M5 ~ M6 (5~6개월차)</div>
+      <div class="tl-title">확장 및 채널 파트너 구축</div>
+      <div class="tl-desc">
+        ▸ Webhooks 기반 실시간 동기화 구현<br>
+        ▸ 파일럿 매장 20~30개 확장<br>
+        ▸ 다점포 체인 1~2곳 PoC 착수<br>
+        ▸ 에이전시 파트너 라이선스 베타 출시<br>
+        ▸ 현지 에이전시/리셀러 2곳 확보
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">M7 ~ M8 (7~8개월차)</div>
+      <div class="tl-title">App Marketplace 등록 및 사업화</div>
+      <div class="tl-desc">
+        ▸ Square App Marketplace 등록 신청 및 심사<br>
+        ▸ 유료 전환 매장 20개 목표 달성<br>
+        ▸ MRR(월 반복매출) 발생 검증<br>
+        ▸ 멀티로케이션 대시보드 PoC 완료<br>
+        ▸ 2차 시장(캐나다, 비-Square POS) 확장 전략 수립
+      </div>
+    </div>
+  </div>
+
+  <h3>3-3. 사업화 목표 — 3단 KPI 체계</h3>
+
+  <div class="grid-3">
+    <div class="card" style="border-left:4px solid var(--accent);">
+      <div class="card-title" style="color:var(--accent);">① 기술 연동 목표</div>
+      <ul style="font-size:13px;">
+        <li>Square OAuth 연동 완료</li>
+        <li>Catalog API 메뉴 CRUD</li>
+        <li>AI 이미지 → 카탈로그 연결</li>
+        <li>Locations API 다점포 관리</li>
+        <li>Webhooks 실시간 동기화</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:4px solid var(--success);">
+      <div class="card-title" style="color:var(--success);">② 시장 검증 목표</div>
+      <ul style="font-size:13px;">
+        <li><strong>Active Seller 5개 이상</strong> (App Marketplace 요건)</li>
+        <li>파일럿 20~30개 매장</li>
+        <li>다점포 체인 1~2곳 PoC</li>
+        <li>현지 에이전시 2곳 확보</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:4px solid var(--warning);">
+      <div class="card-title" style="color:var(--warning);">③ 사업화 목표</div>
+      <ul style="font-size:13px;">
+        <li>유료 전환 매장 20개</li>
+        <li><strong>MRR 발생 검증</strong></li>
+        <li>에이전시 라이선스 출시</li>
+        <li>멀티로케이션 PoC 완료</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>3-4. 자금 소요 및 조달계획</h3>
+
+  <h4>해외마케팅 사업 예산 배분 (계획)</h4>
+  <table>
+    <tr><th>비목</th><th>산출근거</th><th>비율</th><th>주요 내용</th></tr>
+    <tr><td>기술 개발</td><td>Square API 연동, 영문 AI 모델 최적화</td><td>35%</td><td>개발인력 인건비, 인프라 비용</td></tr>
+    <tr><td>현지 마케팅·영업</td><td>파일럿 모집, 에이전시 파트너 개발</td><td>30%</td><td>온라인 광고, 전시회, 세일즈 프로모션</td></tr>
+    <tr><td>제품 현지화</td><td>영문 UX/UI, 법률 검토</td><td>15%</td><td>번역, 현지화 테스트</td></tr>
+    <tr><td>인력·출장</td><td>북미 출장, 파트너 방문</td><td>15%</td><td>브링코 협업, 현지 미팅</td></tr>
+    <tr><td>운영·기타</td><td>서버, 라이선스</td><td>5%</td><td>클라우드 인프라, 관리비</td></tr>
+  </table>
+
+  <h4>자금 조달 계획</h4>
+  <p>
+    현재 확보된 시드 투자(600백만원)를 기반으로, 본 지원사업을 통해 해외 사업화를 추진하고 매출 확보 후 <strong>2026년 하반기 시리즈 A 60억 투자 유치</strong>를 목표로 함.
+  </p>
+
+  <h3>3-5. 출구(EXIT) 목표 및 방안</h3>
+  <p>
+    2027년까지 국내 시장 점유율 확보(5만 매장 이상), 2028년 글로벌 시장 진출 확대 후 IPO 준비에 착수. 매출 안정화로 흑자 유지 후 주관사 선정 및 예비심사를 거쳐 <strong>2028년 상장을 목표</strong>로 추진하고자 함. 이 과정에서 전략적 지분 투자(POS사·대형 프랜차이즈·빅테크 기업이 보유한 유통·결제 생태계와 결합)의 가능성도 검토.
+  </p>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 4. 기업 구성 (Team) — 원본 섹션 4 대응                            -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="s4">
+  <div class="section-header">4. 기업 구성 (Team)</div>
+
+  <h3>4-1. 대표자 현황 및 보유역량</h3>
+  <p>
+    대표자는 국내 IT 기업에서 18년간 기획·사업·마케팅을 총괄하며 업계 최고 성과를 달성. 넥슨에서 던전앤파이터 사업 총괄로 국내 게임 매출 1위를 기록. 위메프 창업 멤버로 신규 서비스 기획·론칭과 비즈니스 기반을 성공적으로 마련. 에이스톰에서는 글로벌 사업·마케팅 총괄로 중국·일본 진출을 성공적으로 이끌어 <strong>해외 퍼블리싱과 파트너십 성과를 입증</strong>.
+  </p>
+  <p>
+    IT 기업에서의 경험과 별개로, 외식업 자영업장을 직접 기획·운영하며 현장의 문제와 기회를 체감. 성수동에서 이자카야 '80에라', 제주에서 피자 전문점 '저스트피자', 뮤직라운지 '제이앤제이슨'을 오픈하였음. 특히 '제이앤제이슨'은 연 매출 80억을 기록하며 <strong>자영업자로서 실전 경험</strong>을 보유.
+  </p>
+
+  <h3>4-2. 팀 구성 및 보유역량</h3>
+
+  <table>
+    <tr><th>순번</th><th>직위</th><th>담당 업무</th><th>보유역량(경력 및 학력 등)</th></tr>
+    <tr><td>1</td><td>CTO</td><td>개발 총괄</td><td>원더피플/에이스톰 CTO, 위메프 CTO, 던전앤파이터 CTO, 카이스트 전산과</td></tr>
+    <tr><td>2</td><td>COO</td><td>운영 총괄</td><td>블록체인 B2B창업, 퀵커머스 플랫폼 창업</td></tr>
+    <tr><td>3</td><td>PO</td><td>기획관리</td><td>KT뮤직 팀장/믹사 전대표, 위메프 실장/Playboard 대표</td></tr>
+    <tr><td>4</td><td>CSO</td><td>보안 책임</td><td>페이먼트 CEO, 에큐온 금융그룹 사외이사, 한양대 과학기술정책학박사</td></tr>
+    <tr><td>5</td><td>UXD</td><td>UX디자인</td><td>AD 펜타브리드, 엘로우펀트 대표</td></tr>
+    <tr><td>6</td><td>CMO</td><td>마케팅 총괄</td><td>놀잇 CSO, 용감한컴퍼니 사업전략이사</td></tr>
+  </table>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">현재 재직 인원</div>
+      <p style="font-size:26px; font-weight:800; color:var(--accent); margin:8px 0;">8명 <span style="font-size:14px; color:var(--gray-500);">(대표자 제외)</span></p>
+    </div>
+    <div class="card">
+      <div class="card-title">추가 고용계획 (협약기간 내)</div>
+      <p style="font-size:26px; font-weight:800; color:var(--success); margin:8px 0;">+2명</p>
+      <p style="font-size:12px; color:var(--gray-500); margin:0;">AI 개발 (25.11) / 마케팅 팀원 (26.02)</p>
+    </div>
+  </div>
+
+  <h3>4-3. 업무파트너(협력기업 등) 현황 및 역량</h3>
+  <table>
+    <tr><th>#</th><th>파트너명</th><th>보유역량</th><th>협력사항</th><th>시기</th></tr>
+    <tr><td>1</td><td>더벤처스</td><td>벤처 기업 지원/투자</td><td>후속투자 연계지원</td><td>24.07</td></tr>
+    <tr><td>2</td><td><strong>브링코</strong></td><td><strong>해외 이커머스 플랫폼</strong></td><td><strong>북미 진출</strong></td><td>25.02</td></tr>
+    <tr><td>3</td><td>성신여대 AI융합</td><td>AI 개발</td><td>AI 산학협력 개발</td><td>25 상반기</td></tr>
+    <tr><td>4</td><td>한국결제네트웍스(KPN)</td><td>결제금액 승인(밴사)</td><td>오프라인 결제승인 솔루션 도입</td><td>25.09</td></tr>
+    <tr><td>5</td><td>카카오페이</td><td>금융 결제사</td><td>AI 메뉴판 연동 및 QR 제작지원</td><td>25.09</td></tr>
+    <tr><td>6</td><td>한국인공지능협회</td><td>AI 버티컬 기업 지원/투자</td><td>후속 투자 검토</td><td>25.09</td></tr>
+    <tr><td>7</td><td>유니온소프트</td><td>POS프로그램 지원</td><td>AI 메뉴판 기술 연동</td><td>25.09</td></tr>
+    <tr><td>8</td><td>오케이포스</td><td>POS프로그램 지원</td><td>AI 메뉴판 기술 연동</td><td>25.09</td></tr>
+    <tr><td>9</td><td>아임유포스</td><td>POS프로그램 지원</td><td>AI 메뉴판 기술 연동</td><td>25.09</td></tr>
+    <tr><td>10</td><td>포스트포스</td><td>POS프로그램 지원</td><td>AI 메뉴판 기술 연동</td><td>25.09</td></tr>
+    <tr><td>11</td><td>KT하이오더</td><td>테이블 오더 프로그램</td><td>AI 메뉴판 기술 연동</td><td>25.09</td></tr>
+  </table>
+
+  <h3>4-4. 국내 실적의 글로벌 번역</h3>
+  <p>"국내 대리점 수요가 커서 해외도 될 것"이 아니라, <strong>채널 파트너가 붙는 구조가 이미 검증됐다</strong>는 메시지로 전환한다.</p>
+
+  <table>
+    <tr><th>국내 실적</th><th>글로벌 번역</th><th>설득 포인트</th></tr>
+    <tr>
+      <td>OKPOS·유니온포스·아임유포스 연동</td>
+      <td>Multi-POS Integration Capability</td>
+      <td><strong>POS-agnostic 아키텍처</strong> 보유</td>
+    </tr>
+    <tr>
+      <td>우아한형제들(배민) AI 이미지 납품</td>
+      <td>Platform-grade Food Visual Engine</td>
+      <td>대형 플랫폼 수준 <strong>이미지 품질·운영 납품 경험</strong></td>
+    </tr>
+    <tr>
+      <td>130+ 매장, 프랜차이즈 중앙 관리</td>
+      <td>Multi-location Dashboard Proven</td>
+      <td>다점포 관리 역량이 <strong>프로덕션 레벨에서 운용</strong></td>
+    </tr>
+    <tr>
+      <td>대리점 B2B 채널 구축</td>
+      <td>Channel Partner Model Validated</td>
+      <td>에이전시/리셀러 <strong>간접 영업 모델 작동</strong></td>
+    </tr>
+    <tr>
+      <td>11개 언어 자동번역</td>
+      <td>Multi-lingual AI Engine Ready</td>
+      <td>북미 다문화 시장에 <strong>즉시 투입 가능</strong></td>
+    </tr>
+    <tr>
+      <td>VAN 직접 연동 선결제 (업계 유일)</td>
+      <td>Direct Payment Infra Capability</td>
+      <td><strong>API 연동 난이도 흡수 역량</strong> 증명</td>
+    </tr>
+  </table>
+
+  <h3>4-5. 글로벌 진출 증빙 전략</h3>
+  <p><strong>"기타 융복합 진출형"</strong>을 전제로, 문서 안에서 최소 두 군데 이상에 글로벌 타깃과 실행 근거를 촘촘히 배치한다.</p>
+
+  <h4>증빙 자료 준비 체크리스트 (붙임3 후보)</h4>
+  <table>
+    <tr><th>#</th><th>증빙 자료</th><th>목적</th><th>상태</th></tr>
+    <tr><td>1</td><td>Square Developer 등록 및 테스트 화면 캡처</td><td>기술 실행 의지 증명</td><td><span class="tag green">준비 가능</span></td></tr>
+    <tr><td>2</td><td>북미 파일럿 LOI (Letter of Intent)</td><td>초기 고객 확보 의향 증명</td><td><span class="tag orange">확보 필요</span></td></tr>
+    <tr><td>3</td><td>현지 파트너/에이전시 협의서</td><td>채널 파트너 계획 구체성</td><td><span class="tag orange">확보 필요</span></td></tr>
+    <tr><td>4</td><td>영문 랜딩페이지 / 제품 소개 페이지</td><td>글로벌 마케팅 준비 상태</td><td><span class="tag green">제작 가능</span></td></tr>
+    <tr><td>5</td><td>해외 셀러 인터뷰 결과 (수요 검증)</td><td>시장 수요의 실체적 근거</td><td><span class="tag orange">확보 필요</span></td></tr>
+    <tr><td>6</td><td>Square App Marketplace 등록 로드맵</td><td>구체적 사업화 계획</td><td><span class="tag green">본 문서에 포함</span></td></tr>
+    <tr><td>7</td><td>브링코 파트너 계약서</td><td>북미 현지 파트너 증빙</td><td><span class="tag green">보유</span></td></tr>
+    <tr><td>8</td><td>배민 AI 이미지 계약서</td><td>대형 플랫폼 기술 검증</td><td><span class="tag green">보유</span></td></tr>
+  </table>
+
+  <h4>글로벌 진출 경쟁력 유형 매핑</h4>
+  <table>
+    <tr><th>유형</th><th>현황</th><th>문서 내 반영 위치</th></tr>
+    <tr><td>해외투자</td><td>더벤처스 (글로벌 VC) 투자 완료</td><td>신청현황, 파트너 현황</td></tr>
+    <tr><td>수출</td><td>SaaS 구독 — 해외 매출 발생 시 자동 수출</td><td>§3 글로벌 BM</td></tr>
+    <tr><td>현지 파트너</td><td>브링코 (북미 개발 파트너)</td><td>§2 국내 검증, §3 로드맵</td></tr>
+    <tr><td>기술 연동</td><td>Square API 연동 계획</td><td>§2 연동 아키텍처 전체</td></tr>
+    <tr><td><strong>기타 융복합</strong></td><td><strong>POS 생태계 Add-on SaaS + 채널 파트너</strong></td><td><strong>전 섹션에 분산 배치</strong></td></tr>
+  </table>
+
+  <h3>4-6. ESG 경영 실천계획</h3>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-title">친환경 (E)</div>
+      <p style="font-size:13px;">종이 메뉴판 디지털화로 연간 인쇄물 제작 및 운송 탄소 배출 절감. 모바일 기기 활용 주문으로 단말 최소화·전자영수증 기본화.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">사회적 책임 (S)</div>
+      <p style="font-size:13px;">고령층 및 비전문가도 쉽게 사용할 수 있는 셀프 온보딩 기반 AI 시스템. 가맹점의 수익성과 운영 효율 증대로 디지털 격차 해소.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">투명 경영 (G)</div>
+      <p style="font-size:13px;">고객 데이터 및 매출 정보 등 주요 데이터 암호화 저장 및 접근권한 관리. 윤리경영 가이드라인 수립, CTO·리드 엔지니어 중심 스톡옵션 부여.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 기대효과 및 결론                                                   -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="conclusion">
+  <h2>기대효과 및 결론</h2>
+
+  <div class="grid-2">
+    <div class="card" style="border-left:4px solid var(--accent);">
+      <div class="card-title">기술적 기대효과</div>
+      <ul style="font-size:13px;">
+        <li>Square API 기반 글로벌 POS 연동 아키텍처 확보</li>
+        <li>영문 AI 메뉴 파서 및 이미지 엔진 고도화</li>
+        <li>POS-agnostic 엔진으로 Toast, Clover 등 후속 연동 용이</li>
+        <li>멀티로케이션 대시보드의 글로벌 운영 검증</li>
+      </ul>
+    </div>
+    <div class="card" style="border-left:4px solid var(--success);">
+      <div class="card-title">사업적 기대효과</div>
+      <ul style="font-size:13px;">
+        <li>북미 시장 MRR(월 반복매출) 구조 검증</li>
+        <li>Square App Marketplace 공식 등록 → 셀러 접점 확보</li>
+        <li>에이전시index.html/리셀러 채널 → 레버리지 성장 기반 구축</li>
+        <li>브릿지/시리즈A 투자 시 글로벌 사업 실적을 밸류에이션 근거로 활용</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="quote" style="font-size:15px;">
+    OQ는 국내 POS 채널에서 검증된 메뉴 디지털 전환 기술과 AI 비주얼 최적화 역량을 바탕으로, Square 생태계를 1차 진입 채널로 삼아 <strong>글로벌 레스토랑의 메뉴 온보딩과 운영 마케팅을 자동화하는 Restaurant Onboarding &amp; Merchandising SaaS</strong>로 확장한다.
+  </div>
+
+  <p>
+    이는 단순한 "해외 수출"이 아니라, <strong>글로벌 POS 인프라에서 여전히 수작업으로 남아 있는 마지막 구간을 AI로 자동화</strong>하는 인프라 사업이다. 국내에서 검증된 기술과 채널 파트너 모델은 해외 실행 리스크를 최소화하는 핵심 자산이며, Square 생태계는 이를 가장 빠르게 검증할 수 있는 최적의 첫 글로벌 채널이다.
+  </p>
+</section>
+
+</div><!-- /.container -->
+
+
+<!-- ── FOOTER ── -->
+<div class="doc-footer">
+  <p>주식회사 제너디어스 (Genideas Inc.) — OQ</p>
+  <p>TIPS 해외마케팅 사업계획서</p>
+  <p style="margin-top:8px; font-size:11px; opacity:.6;">본 문서는 팁스(TIPS) 해외마케팅 사업 신청을 위해 작성되었습니다.</p>
+</div>
+
+</body>
+</html>
